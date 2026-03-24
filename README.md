@@ -23,8 +23,6 @@
 ![Pull Requests](https://img.shields.io/github/issues-pr/LCSOGthb/RACS)
 ![GitHub commits since latest release](https://img.shields.io/github/commits-since/LCSOGthb/RACS/latest)
 ![GitHub contributors from allcontributors.org](https://img.shields.io/github/all-contributors/LCSOGthb/RACS)
-![GitHub Created At](https://img.shields.io/github/created-at/LCSOGthb/RACS)
-![GitHub last commit](https://img.shields.io/github/last-commit/LCSOGthb/RACS)
 ![GitHub Release Date](https://img.shields.io/github/release-date/LCSOGthb/RACS)
 ![GitHub Release Date](https://img.shields.io/github/release-date-pre/LCSOGthb/RACS)
 ![GitHub language count](https://img.shields.io/github/languages/count/LCSOGthb/RACS)
