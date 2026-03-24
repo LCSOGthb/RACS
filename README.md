@@ -12,6 +12,15 @@
 ![GitHub Release Date](https://img.shields.io/github/release-date-pre/LCSOGthb/RACS)
 ![GitHub language count](https://img.shields.io/github/languages/count/LCSOGthb/RACS)
 ![GitHub top language](https://img.shields.io/github/languages/top/LCSOGthb/RACS)
+![GitHub R package version](https://img.shields.io/github/r-package/v/LCSOGthbb/RACS)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/LCSOGthb/RACS)
+![GitHub repo file or directory count](https://img.shields.io/github/directory-file-count/LCSOGthb/RACS)
+![GitHub repo size](https://img.shields.io/github/repo-size/LCSOGthb/RACS)
+![GitHub Tag](https://img.shields.io/github/v/tag/LCSOGthb/RACS)
+![GitHub Release](https://img.shields.io/github/v/release/LCSOGthb/RACS)
+![GitHub package.json version](https://img.shields.io/github/package-json/v/LCSOGthb/RACS)
+![GitHub manifest version](https://img.shields.io/github/manifest-json/v/LCSOGthb/RACS)
+![GitHub lerna version](https://img.shields.io/github/lerna-json/v/LCSOGthb/RACS)
 
 OSSF: [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/LCSOGthb/RACS/badge)](https://scorecard.dev/viewer/?uri=github.com/LCSOGthb/RACS)
 
