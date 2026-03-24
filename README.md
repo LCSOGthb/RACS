@@ -17,16 +17,6 @@
 ![Closed Issues](https://img.shields.io/github/issues-closed/LCSOGthb/RACS)
 ![Last Commit](https://img.shields.io/github/last-commit/LCSOGthb/RACS)
 ![Pull Requests](https://img.shields.io/github/issues-pr/LCSOGthb/RACS)
-![GitHub commits since latest release](https://img.shields.io/github/commits-since/LCSOGthb/RACS/latest)
-![GitHub contributors from allcontributors.org](https://img.shields.io/github/all-contributors/LCSOGthb/RACS)
-![GitHub Release Date](https://img.shields.io/github/release-date/LCSOGthb/RACS)
-![GitHub Release Date](https://img.shields.io/github/release-date-pre/LCSOGthb/RACS)
-![GitHub R package version](https://img.shields.io/github/r-package/v/LCSOGthbb/RACS)
-![GitHub Tag](https://img.shields.io/github/v/tag/LCSOGthb/RACS)
-![GitHub Release](https://img.shields.io/github/v/release/LCSOGthb/RACS)
-![GitHub package.json version](https://img.shields.io/github/package-json/v/LCSOGthb/RACS)
-![GitHub manifest version](https://img.shields.io/github/manifest-json/v/LCSOGthb/RACS)
-![GitHub lerna version](https://img.shields.io/github/lerna-json/v/LCSOGthb/RACS)
 
 OSSF: [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/LCSOGthb/RACS/badge)](https://scorecard.dev/viewer/?uri=github.com/LCSOGthb/RACS)
 
