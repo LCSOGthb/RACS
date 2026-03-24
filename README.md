@@ -10,6 +10,8 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/LCSOGthb/RACS)
 ![GitHub Release Date](https://img.shields.io/github/release-date/LCSOGthb/RACS)
 ![GitHub Release Date](https://img.shields.io/github/release-date-pre/LCSOGthb/RACS)
+![GitHub language count](https://img.shields.io/github/languages/count/LCSOGthb/RACS)
+![GitHub top language](https://img.shields.io/github/languages/top/LCSOGthb/RACS)
 
 OSSF: [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/LCSOGthb/RACS/badge)](https://scorecard.dev/viewer/?uri=github.com/LCSOGthb/RACS)
 
