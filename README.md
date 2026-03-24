@@ -5,5 +5,10 @@
 ![GitHub commits since latest release](https://img.shields.io/github/commits-since/LCSOGthb/RACS/latest)
 ![GitHub contributors](https://img.shields.io/github/contributors/LCSOGthb/RACS)
 ![GitHub contributors](https://img.shields.io/github/contributors-anon/LCSOGthb/RACS)
+![GitHub contributors from allcontributors.org](https://img.shields.io/github/all-contributors/LCSOGthb/RACS)
+![GitHub Created At](https://img.shields.io/github/created-at/LCSOGthb/RACS)
+![GitHub last commit](https://img.shields.io/github/last-commit/LCSOGthb/RACS)
+![GitHub Release Date](https://img.shields.io/github/release-date/LCSOGthb/RACS)
+![GitHub Release Date](https://img.shields.io/github/release-date-pre/LCSOGthb/RACS)
 
 OSSF: [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/LCSOGthb/RACS/badge)](https://scorecard.dev/viewer/?uri=github.com/LCSOGthb/RACS)
