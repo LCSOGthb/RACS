@@ -12,3 +12,5 @@
 ![GitHub Release Date](https://img.shields.io/github/release-date-pre/LCSOGthb/RACS)
 
 OSSF: [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/LCSOGthb/RACS/badge)](https://scorecard.dev/viewer/?uri=github.com/LCSOGthb/RACS)
+
+Codacy: [![Codacy Badge](https://app.codacy.com/project/badge/Grade/ba2bf4be83a54ef6ad29f0732dc3fabd)](https://app.codacy.com/gh/LCSOGthb/RACS/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
