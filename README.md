@@ -1,3 +1,4 @@
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=LCSOGthb)](https://github.com/anuraghazra/github-readme-stats)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/w/LCSOGthb/RACS)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/LCSOGthb/RACS)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/LCSOGthb/RACS)
@@ -12,7 +13,6 @@
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/LCSOGthb/RACS)
 ![GitHub repo file or directory count](https://img.shields.io/github/directory-file-count/LCSOGthb/RACS)
 ![GitHub repo size](https://img.shields.io/github/repo-size/LCSOGthb/RACS)
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=LCSOGthb)](https://github.com/anuraghazra/github-readme-stats)
 ![Repo Size](https://img.shields.io/github/repo-size/LCSOGthb/RACS)
 ![Open Issues](https://img.shields.io/github/issues/LCSOGthb/RACS)
 ![Closed Issues](https://img.shields.io/github/issues-closed/LCSOGthb/RACS)
