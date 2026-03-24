@@ -12,7 +12,6 @@
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/LCSOGthb/RACS)
 ![GitHub repo file or directory count](https://img.shields.io/github/directory-file-count/LCSOGthb/RACS)
 ![GitHub repo size](https://img.shields.io/github/repo-size/LCSOGthb/RACS)
-![Repo Size](https://img.shields.io/github/repo-size/LCSOGthb/RACS)
 ![Open Issues](https://img.shields.io/github/issues/LCSOGthb/RACS)
 ![Closed Issues](https://img.shields.io/github/issues-closed/LCSOGthb/RACS)
 ![Last Commit](https://img.shields.io/github/last-commit/LCSOGthb/RACS)
