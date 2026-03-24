@@ -1,4 +1,5 @@
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=LCSOGthb)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=LCSOGthb)](https://github.com/anuraghazra/github-readme-stats)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/w/LCSOGthb/RACS)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/LCSOGthb/RACS)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/LCSOGthb/RACS)
