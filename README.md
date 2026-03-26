@@ -16,7 +16,7 @@
 ![Closed Issues](https://img.shields.io/github/issues-closed/LCSOGthb/RACS)
 ![Last Commit](https://img.shields.io/github/last-commit/LCSOGthb/RACS)
 ![Pull Requests](https://img.shields.io/github/issues-pr/LCSOGthb/RACS)
-![Endpoint Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Floc-counter.onrender.com%3Frepo%3DLCSGthb%2FRACS)
+![Endpoint Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Floc-counter.onrender.com%3Frepo%3DLCSOGthb%2FRACS)
 
 OSSF: [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/LCSOGthb/RACS/badge)](https://scorecard.dev/viewer/?uri=github.com/LCSOGthb/RACS)
 
