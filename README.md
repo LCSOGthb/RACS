@@ -28,3 +28,5 @@ SonarCloud: [![Quality Gate Status](https://sonarcloud.io/api/project_badges/mea
 CodeFactor: [![CodeFactor](https://www.codefactor.io/repository/github/lcsogthb/racs/badge)](https://www.codefactor.io/repository/github/lcsogthb/racs)
 
 CodeRabbit: ![CodeRabbit Pull Request Reviews](https://img.shields.io/coderabbit/prs/github/LCSOGthb/RACS?utm_source=oss&utm_medium=github&utm_campaign=LCSOGthb%2FRACS&labelColor=171717&color=FF570A&link=https%3A%2F%2Fcoderabbit.ai&label=CodeRabbit+Reviews)
+
+DeepSoirce: [![DeepSource](https://app.deepsource.com/gh/LCSOGthb/RACS.svg/?label=code+coverage&show_trend=true&token=LIHQ9MpwK2o2ms_zj62G0W2-)](https://app.deepsource.com/gh/LCSOGthb/RACS/) [![DeepSource](https://app.deepsource.com/gh/LCSOGthb/RACS.svg/?label=active+issues&show_trend=true&token=LIHQ9MpwK2o2ms_zj62G0W2-)](https://app.deepsource.com/gh/LCSOGthb/RACS/) [![DeepSource](https://app.deepsource.com/gh/LCSOGthb/RACS.svg/?label=resolved+issues&show_trend=true&token=LIHQ9MpwK2o2ms_zj62G0W2-)](https://app.deepsource.com/gh/LCSOGthb/RACS/)
