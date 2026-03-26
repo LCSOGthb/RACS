@@ -17,7 +17,7 @@
 ![Last Commit](https://img.shields.io/github/last-commit/LCSOGthb/RACS)
 ![Pull Requests](https://img.shields.io/github/issues-pr/LCSOGthb/RACS)
 ![Endpoint Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Floc-counter.onrender.com%2F%3Frepo%3DLCSOGthb%2FRACS%26branch%3Dmain%26ignored%3Dpnpm-lock.yaml%2CREADME.md%2Cpackage.json%2C.gitignore%26stat%3Dlines)
-# LoC-Badge ![Generated Button](https://raw.githubusercontent.com/alexispurslane/GHA-LoC-Badge/image-data/badge.svg)
+![Generated Button](https://raw.githubusercontent.com/alexispurslane/GHA-LoC-Badge/image-data/badge.svg)
 
 OSSF: [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/LCSOGthb/RACS/badge)](https://scorecard.dev/viewer/?uri=github.com/LCSOGthb/RACS)
 
