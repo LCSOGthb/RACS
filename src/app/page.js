@@ -106,7 +106,7 @@ export default function Dashboard() {
     <div className="min-h-screen bg-gray-50 font-inter">
       <div className="border-b sticky top-0 z-10 bg-white/90 backdrop-blur-sm shadow-sm">
         <div className="max-w-5xl mx-auto p-4 flex justify-between items-center">
-          <h1 className="text-2xl font-semibold text-gray-900">Text Dashboard</h1>
+          <h1 className="text-2xl font-semibold text-gray-900">RACS</h1>
           {!user ? (
             <Button onClick={() => supabase.auth.signInWithOAuth({ provider: "github" })}>
               Login
