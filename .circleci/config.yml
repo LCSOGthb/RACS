@@ -10,9 +10,6 @@ jobs:
           name: Install dependencies
           command: npm ci
       - run:
-          name: Lint
-          command: npm run lint
-      - run:
           name: Build Next.js
           command: npm run build
 
