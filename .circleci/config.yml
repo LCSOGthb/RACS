@@ -16,6 +16,8 @@ jobs:
     steps:
       - checkout
       - run:
+          name: Deploy
+          command: echo "Deploying..."
 
 workflows:
   say-hello-workflow:
