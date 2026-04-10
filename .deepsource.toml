@@ -1,1 +1,110 @@
+version = 1
 
+[[analyzers]]
+name = "python"
+
+
+[[analyzers]]
+name = "go"
+
+[[analyzers]]
+name = "javascript"
+
+[[analyzers]]
+name = "java"
+
+[[analyzers]]
+name = "ruby"
+
+[[analyzers]]
+name = "rust"
+
+[[analyzers]]
+name = "kotlin"
+
+[[analyzers]]
+name = "swift"
+
+[[analyzers]]
+name = "cxx"
+
+[[analyzers]]
+name = "csharp"
+
+[[analyzers]]
+name = "scala"
+
+[[analyzers]]
+name = "php"
+
+[[analyzers]]
+name = "docker"
+
+[[analyzers]]
+name = "terraform"
+
+[[analyzers]]
+name = "ansible"
+
+[[analyzers]]
+name = "shell"
+
+[[analyzers]]
+name = "sql
+
+[[code_formatters]]
+name = "autopep8"
+
+[[code_formatters]]
+name = "black"
+
+[[code_formatters]]
+name = "isort"
+
+[[code_formatters]]
+name = "yapf"
+
+[[code_formatters]]
+name = "ruff"
+
+[[code_formatters]]
+name = "gofmt"
+
+[[code_formatters]]
+name = "gofumpt"
+
+[[code_formatters]]
+name = "rustfmt"
+
+[[code_formatters]]
+name = "prettier"
+
+[[code_formatters]]
+name = "standardjs"
+
+[[code_formatters]]
+name = "rubocop"
+
+[[code_formatters]]
+name = "standardrb"
+
+[[code_formatters]]
+name = "google-java-format"
+
+[[code_formatters]]
+name = "scalafmt"
+
+[[code_formatters]]
+name = "dotnet-format"
+
+[[code_formatters]]
+name = "clang-format"
+
+[[code_formatters]]
+name = "php-cs-fixer"
+
+[[code_formatters]]
+name = "ktlint"
+
+[[code_formatters]]
+name = "swift-format"
