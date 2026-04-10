@@ -30,3 +30,5 @@ CodeRabbit: ![CodeRabbit Pull Request Reviews](https://img.shields.io/coderabbit
 DeepSoirce: [![DeepSource](https://app.deepsource.com/gh/LCSOGthb/RACS.svg/?label=code+coverage&show_trend=true&token=LIHQ9MpwK2o2ms_zj62G0W2-)](https://app.deepsource.com/gh/LCSOGthb/RACS/) [![DeepSource](https://app.deepsource.com/gh/LCSOGthb/RACS.svg/?label=active+issues&show_trend=true&token=LIHQ9MpwK2o2ms_zj62G0W2-)](https://app.deepsource.com/gh/LCSOGthb/RACS/) [![DeepSource](https://app.deepsource.com/gh/LCSOGthb/RACS.svg/?label=resolved+issues&show_trend=true&token=LIHQ9MpwK2o2ms_zj62G0W2-)](https://app.deepsource.com/gh/LCSOGthb/RACS/)
 
 Qlty: [![Maintainability](https://qlty.sh/gh/LCSOGthb/projects/RACS/maintainability.svg)](https://qlty.sh/gh/LCSOGthb/projects/RACS) [![Code Coverage](https://qlty.sh/gh/LCSOGthb/projects/RACS/coverage.svg)](https://qlty.sh/gh/LCSOGthb/projects/RACS)
+
+Snyk: [![Known Vulnerabilities](https://snyk.io/test/github/LCSOGthb/RACS/badge.svg)](https://snyk.io/test/github/LCSOGthb/RACS)
