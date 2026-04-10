@@ -53,21 +53,27 @@ name = "sql
 
 [[code_formatters]]
 name = "prettier"
+enabled = true
 
 [[code_formatters]]
 name = "standardjs"
+enabled = true
 
 [[code_formatters]]
 name = "rubocop"
+enabled = true
 
 [[code_formatters]]
 name = "standardrb"
+enabled = true
 
 [[code_formatters]]
 name = "google-java-format"
+enabled = true
 
 [[code_formatters]]
 name = "scalafmt"
+enabled = true
 
 [[code_formatters]]
 name = "dotnet-format"
