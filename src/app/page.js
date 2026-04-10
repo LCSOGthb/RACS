@@ -23,7 +23,7 @@ const inter = Inter({
   subsets: ["latin"],
 })
 
-const STATUS_OPTIONS = ["reported", "reviewed", "pending"]
+const STATUS_OPTIONS = ["Reported", "Reviewed", "Pending"]
 
 function formatDate(dateStr) {
   if (!dateStr) return "—"
