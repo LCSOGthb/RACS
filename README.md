@@ -39,3 +39,5 @@ Coverity: <a href="https://scan.coverity.com/projects/lcsogthb-racs">
 </a>
 
 TravisCI: [![Build Status](https://app.travis-ci.com/LCSOGthb/RACS.svg?token=xetEiGsntkHbhbzVxWLk&branch=main)](https://app.travis-ci.com/LCSOGthb/RACS)
+
+ScrutinizerCI: [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/LCSOGthb/RACS/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/LCSOGthb/RACS/?branch=main) [![Code Coverage](https://scrutinizer-ci.com/g/LCSOGthb/RACS/badges/coverage.png?b=main)](https://scrutinizer-ci.com/g/LCSOGthb/RACS/?branch=main) [![Build Status](https://scrutinizer-ci.com/g/LCSOGthb/RACS/badges/build.png?b=main)](https://scrutinizer-ci.com/g/LCSOGthb/RACS/build-status/main) [![Code Intelligence Status](https://scrutinizer-ci.com/g/LCSOGthb/RACS/badges/code-intelligence.svg?b=main)](https://scrutinizer-ci.com/code-intelligence)
