@@ -18,7 +18,11 @@ enabled = true
 
   [analyzers.meta]
   plugins = ["react"]
-  environment = ["browser", "nodejs"]
+
+  environment = [
+    "browser",
+    "nodejs"
+  ]
 
 [[analyzers]]
 name = "secrets"
