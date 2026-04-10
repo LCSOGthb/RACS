@@ -136,11 +136,13 @@ export default function Dashboard() {
         >
           {filteredTexts.map((text) => (
             <Reorder.Item
-              key={text.id}
               value={text.id}
+              key={text.id}
               layout
-              drag
-              dragConstraints={{ top: 0, left: 0, right: 0, bottom: 0 }}
+              whileDrag={{
+                scale: 1.02,
+                boxShadow: " 0 10px 30px rgba(0,0,0,0.15)",
+              }}
             >
               <Card className="shadow-md hover:shadow-lg transition-shadow duration-200">
                 <CardHeader className="flex items-start justify-between p-4">
@@ -171,7 +173,10 @@ export default function Dashboard() {
         </Reorder.Group>
 
         {filteredTexts.length === 0 && (
-          <div className="text-center text-gray-500 mt-10">No results found</div>
+          <div className="text-center py-20 text-muted-foreground">
+            <p className="text-lg font-medium">No texts yet</p>
+            <p className="text-sm">Click + to create your first note</p>
+          </div>
         )}
       </div>
 
