@@ -32,3 +32,8 @@ DeepSoirce: [![DeepSource](https://app.deepsource.com/gh/LCSOGthb/RACS.svg/?labe
 Qlty: [![Maintainability](https://qlty.sh/gh/LCSOGthb/projects/RACS/maintainability.svg)](https://qlty.sh/gh/LCSOGthb/projects/RACS) [![Code Coverage](https://qlty.sh/gh/LCSOGthb/projects/RACS/coverage.svg)](https://qlty.sh/gh/LCSOGthb/projects/RACS)
 
 Snyk: [![Known Vulnerabilities](https://snyk.io/test/github/LCSOGthb/RACS/badge.svg)](https://snyk.io/test/github/LCSOGthb/RACS)
+
+Coverity: <a href="https://scan.coverity.com/projects/lcsogthb-racs">
+  <img alt="Coverity Scan Build Status"
+       src="https://scan.coverity.com/projects/33033/badge.svg"/>
+</a>
