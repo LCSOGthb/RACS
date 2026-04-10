@@ -1,0 +1,12 @@
+checks:
+    javascript: true
+
+build:
+    image: default-jammy
+    nodes:
+        analysis:
+            environment:
+                node: 20
+            tests:
+                override:
+                    - js-scrutinizer-run
