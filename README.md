@@ -37,3 +37,5 @@ Coverity: <a href="https://scan.coverity.com/projects/lcsogthb-racs">
   <img alt="Coverity Scan Build Status"
        src="https://scan.coverity.com/projects/33033/badge.svg"/>
 </a>
+
+TravisCI: [![Build Status](https://app.travis-ci.com/LCSOGthb/RACS.svg?token=xetEiGsntkHbhbzVxWLk&branch=main)](https://app.travis-ci.com/LCSOGthb/RACS)
