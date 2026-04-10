@@ -52,9 +52,6 @@ name = "shell"
 name = "sql
 
 [[code_formatters]]
-name = "autopep8"
-
-[[code_formatters]]
 name = "black"
 
 [[code_formatters]]
