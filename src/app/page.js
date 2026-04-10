@@ -10,12 +10,18 @@ import { Textarea } from "@/components/ui/textarea"
 import { Badge } from "@/components/ui/badge"
 import { Star, GripVertical } from "lucide-react"
 import { motion, Reorder } from "framer-motion"
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog"
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogDescription
+} from "@/components/ui/dialog"
+
 import { Inter } from "next/font/google"
 
 const inter = Inter({
   subsets: ["latin"],
-  variable: "--font-inter",
 })
 
 export default function Dashboard() {
@@ -44,19 +50,22 @@ export default function Dashboard() {
       .from("texts")
       .select("*")
       .order("position", { ascending: true })
+
     setTexts(data || [])
   }
 
   const addText = async () => {
     if (!user) return
 
-    const maxPos = texts.length ? Math.max(...texts.map(t => t.position || 0)) : 0
+    const maxPos = texts.length
+      ? Math.max(...texts.map((t) => t.position || 0))
+      : 0
 
     await supabase.from("texts").insert([
       {
         title,
         content,
-        tags: tags.split(",").map(t => t.trim()),
+        tags: tags.split(",").map((t) => t.trim()),
         favorite: false,
         position: maxPos + 1,
         user_id: user.id
@@ -67,6 +76,7 @@ export default function Dashboard() {
     setContent("")
     setTags("")
     setShowModal(false)
+
     fetchTexts()
   }
 
@@ -80,41 +90,78 @@ export default function Dashboard() {
       .from("texts")
       .update({ favorite: !value })
       .eq("id", id)
+
     fetchTexts()
   }
 
+  // FIXED REORDER
   const handleReorder = (newIds) => {
-    const newOrder = newIds.map(id => texts.find(t => t.id === id))
-    setTexts(newOrder)
+    const ownedTexts = texts.filter((t) => t.user_id === user?.id)
+
+    const newOrder = newIds
+      .map((id) => ownedTexts.find((t) => t.id === id))
+      .filter(Boolean)
+
+    const others = texts.filter((t) => t.user_id !== user?.id)
+
+    setTexts([...newOrder, ...others])
 
     if (reorderTimeout.current) clearTimeout(reorderTimeout.current)
 
     reorderTimeout.current = setTimeout(async () => {
-      const updates = newOrder.map((t, idx) => ({ id: t.id, position: idx }))
-      const { error } = await supabase.from("texts").upsert(updates, { onConflict: ["id"] })
-      if (error) console.error("Failed to save positions:", error.message)
+      for (let i = 0; i < newOrder.length; i++) {
+        const item = newOrder[i]
+
+        const { error } = await supabase
+          .from("texts")
+          .update({ position: i })
+          .eq("id", item.id)
+          .eq("user_id", user.id)
+
+        if (error) {
+          console.error("Failed to save position:", error.message)
+          break
+        }
+      }
     }, 300)
   }
 
   const filteredTexts = texts.filter(
-    t =>
+    (t) =>
       t.title?.toLowerCase().includes(search.toLowerCase()) ||
       t.content?.toLowerCase().includes(search.toLowerCase())
   )
 
+  const ownedTexts = filteredTexts.filter(
+    (t) => t.user_id === user?.id
+  )
+
   return (
-    <div className="min-h-screen bg-gray-50 font-inter">
+    <div className={`min-h-screen bg-gray-50 ${inter.className}`}>
       <div className="border-b sticky top-0 z-10 bg-white/90 backdrop-blur-sm shadow-sm">
         <div className="max-w-5xl mx-auto p-4 flex justify-between items-center">
-          <h1 className="text-2xl font-semibold text-gray-900">RACS</h1>
+          <h1 className="text-2xl font-semibold">RACS</h1>
+
           {!user ? (
-            <Button onClick={() => supabase.auth.signInWithOAuth({ provider: "github" })}>
+            <Button
+              onClick={() =>
+                supabase.auth.signInWithOAuth({ provider: "github" })
+              }
+            >
               Login
             </Button>
           ) : (
             <div className="flex items-center gap-3">
-              <span className="text-sm text-gray-600">{user.email}</span>
-              <Button variant="outline" onClick={() => supabase.auth.signOut()}>Logout</Button>
+              <span className="text-sm text-gray-600">
+                {user.email}
+              </span>
+
+              <Button
+                variant="outline"
+                onClick={() => supabase.auth.signOut()}
+              >
+                Logout
+              </Button>
             </div>
           )}
         </div>
@@ -128,42 +175,77 @@ export default function Dashboard() {
           className="mb-6"
         />
 
+        {/* OWNED REORDERABLE */}
         <Reorder.Group
           axis="y"
-          values={texts.map(t => t.id)}
+          values={ownedTexts.map((t) => t.id)}
           onReorder={handleReorder}
           className="grid gap-4"
         >
-          {filteredTexts.map((text) => (
+          {ownedTexts.map((text) => (
             <Reorder.Item
-              value={text.id}
               key={text.id}
+              value={text.id}
               layout
               whileDrag={{
                 scale: 1.02,
-                boxShadow: " 0 10px 30px rgba(0,0,0,0.15)",
+                boxShadow: "0 10px 30px rgba(0,0,0,0.15)",
               }}
             >
-              <Card className="shadow-md hover:shadow-lg transition-shadow duration-200">
+              <Card className="shadow-md hover:shadow-lg transition-shadow">
                 <CardHeader className="flex items-start justify-between p-4">
                   <div className="mr-2 cursor-grab text-gray-400">
                     <GripVertical size={20} />
                   </div>
-                  <CardTitle className="text-lg font-medium text-gray-900">{text.title}</CardTitle>
+
+                  <CardTitle className="text-lg font-medium">
+                    {text.title}
+                  </CardTitle>
+
                   {user?.id === text.user_id && (
-                    <Button variant="destructive" size="sm" onClick={() => deleteText(text.id)}>Delete</Button>
+                    <Button
+                      variant="destructive"
+                      size="sm"
+                      onClick={() => deleteText(text.id)}
+                    >
+                      Delete
+                    </Button>
                   )}
                 </CardHeader>
+
                 <CardContent className="p-4">
-                  <p className="text-gray-700">{text.content}</p>
+                  <p className="text-gray-700">
+                    {text.content}
+                  </p>
+
                   <div className="flex gap-2 mt-3 flex-wrap">
                     {text.tags?.map((tag, i) => (
-                      <Badge key={i} variant="secondary">{tag}</Badge>
+                      <Badge key={i} variant="secondary">
+                        {tag}
+                      </Badge>
                     ))}
                   </div>
+
                   {user?.id === text.user_id && (
-                    <Button variant="ghost" size="sm" className="mt-3" onClick={() => toggleFavorite(text.id, text.favorite)}>
-                      <Star size={16} className={text.favorite ? "fill-yellow-400 text-yellow-400" : ""} />
+                    <Button
+                      variant="ghost"
+                      size="sm"
+                      className="mt-3"
+                      onClick={() =>
+                        toggleFavorite(
+                          text.id,
+                          text.favorite
+                        )
+                      }
+                    >
+                      <Star
+                        size={16}
+                        className={
+                          text.favorite
+                            ? "fill-yellow-400 text-yellow-400"
+                            : ""
+                        }
+                      />
                     </Button>
                   )}
                 </CardContent>
@@ -174,8 +256,12 @@ export default function Dashboard() {
 
         {filteredTexts.length === 0 && (
           <div className="text-center py-20 text-muted-foreground">
-            <p className="text-lg font-medium">No texts yet</p>
-            <p className="text-sm">Click + to create your first note</p>
+            <p className="text-lg font-medium">
+              No texts yet
+            </p>
+            <p className="text-sm">
+              Click + to create your first note
+            </p>
           </div>
         )}
       </div>
@@ -194,7 +280,7 @@ export default function Dashboard() {
           <DialogHeader>
             <DialogTitle>Add Text</DialogTitle>
             <DialogDescription>
-              Fill in the title, content, and optional tags for your new text item.
+              Fill in title, content and tags
             </DialogDescription>
           </DialogHeader>
 
@@ -203,24 +289,35 @@ export default function Dashboard() {
               placeholder="Title"
               value={title}
               onChange={(e) => setTitle(e.target.value)}
-              aria-label="Text title"
             />
+
             <Textarea
               placeholder="Content"
               value={content}
-              onChange={(e) => setContent(e.target.value)}
-              aria-label="Text content"
+              onChange={(e) =>
+                setContent(e.target.value)
+              }
             />
+
             <Input
               placeholder="Tags (comma-separated)"
               value={tags}
-              onChange={(e) => setTags(e.target.value)}
-              aria-label="Text tags"
+              onChange={(e) =>
+                setTags(e.target.value)
+              }
             />
 
             <div className="flex justify-end gap-2 mt-4">
-              <Button variant="outline" onClick={() => setShowModal(false)}>Cancel</Button>
-              <Button onClick={addText}>Add</Button>
+              <Button
+                variant="outline"
+                onClick={() => setShowModal(false)}
+              >
+                Cancel
+              </Button>
+
+              <Button onClick={addText}>
+                Add
+              </Button>
             </div>
           </div>
         </DialogContent>
