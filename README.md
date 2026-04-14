@@ -31,13 +31,9 @@ DeepSoirce: [![DeepSource](https://app.deepsource.com/gh/LCSOGthb/RACS.svg/?labe
 
 Qlty: [![Maintainability](https://qlty.sh/gh/LCSOGthb/projects/RACS/maintainability.svg)](https://qlty.sh/gh/LCSOGthb/projects/RACS) [![Code Coverage](https://qlty.sh/gh/LCSOGthb/projects/RACS/coverage.svg)](https://qlty.sh/gh/LCSOGthb/projects/RACS)
 
-Snyk: [![Known Vulnerabilities](https://snyk.io/test/github/LCSOGthb/RACS/badge.svg)](https://snyk.io/test/github/LCSOGthb/RACS)
-
 Coverity: <a href="https://scan.coverity.com/projects/lcsogthb-racs">
   <img alt="Coverity Scan Build Status"
        src="https://scan.coverity.com/projects/33033/badge.svg"/>
 </a>
-
-TravisCI: [![Build Status](https://app.travis-ci.com/LCSOGthb/RACS.svg?token=xetEiGsntkHbhbzVxWLk&branch=main)](https://app.travis-ci.com/LCSOGthb/RACS)
 
 ScrutinizerCI: [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/LCSOGthb/RACS/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/LCSOGthb/RACS/?branch=main) [![Code Coverage](https://scrutinizer-ci.com/g/LCSOGthb/RACS/badges/coverage.png?b=main)](https://scrutinizer-ci.com/g/LCSOGthb/RACS/?branch=main) [![Build Status](https://scrutinizer-ci.com/g/LCSOGthb/RACS/badges/build.png?b=main)](https://scrutinizer-ci.com/g/LCSOGthb/RACS/build-status/main) [![Code Intelligence Status](https://scrutinizer-ci.com/g/LCSOGthb/RACS/badges/code-intelligence.svg?b=main)](https://scrutinizer-ci.com/code-intelligence)
