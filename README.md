@@ -1,3 +1,5 @@
+This project is going to be not active for a while, due to problems i've been having recently that i can't resolve. Thank you for your understanding.
+
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/w/LCSOGthb/RACS)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/LCSOGthb/RACS)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/y/LCSOGthb/RACS)
